@@ -1,5 +1,9 @@
 extends common/layout
 
+block head
+  script(src='/hello.js' defer)
+
 block content
-  | hi
+  div#example
+    | waiting
 

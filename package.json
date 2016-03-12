@@ -10,6 +10,7 @@
     "grunt": "*",
     "grunt-cli": "*",
     "grunt-browserify": "*",
+    "grunt-babel": "*",
     "grunt-contrib-copy": "*",
     "grunt-contrib-jade": "*",
     "react": "*",

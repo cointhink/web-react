@@ -17,6 +17,16 @@ module.exports = function(grunt) {
         }]
       }
     },
+    babel: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'js',
+          src: ['*.js'],
+          dest: 'build',
+        }]
+      }
+    },
     browserify: {
       dist: {
         options: {
@@ -30,7 +40,7 @@ module.exports = function(grunt) {
     copy: {
       main: {
         expand: true,
-        cwd: 'html',
+        cwd: 'vendor',
         src: '**',
         dest: 'build/',
       },
@@ -38,10 +48,11 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-browserify')
+  grunt.loadNpmTasks('grunt-babel')
   grunt.loadNpmTasks('grunt-contrib-copy')
   grunt.loadNpmTasks('grunt-contrib-jade')
 
   // Default task(s).
-  grunt.registerTask('default', ['browserify', 'jade', 'copy']);
+  grunt.registerTask('default', ['babel', 'jade', 'copy']);
 
 }
