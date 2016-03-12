@@ -2,14 +2,15 @@
    "name": "cointhink-ui",
    "version": "1.0.0",
    "scripts": {
-     "build": "babel src -d lib",
+     "grunt": "grunt",
      "react": "babel --presets react src --watch --out-dir build",
      "browserify": "browserify -t [ babelify --presets [ react ] ] main.js -o build/bundle.js"
    },
-"devDependencies": { 
+"devDependencies": {
     "grunt": "*",
     "grunt-cli": "*",
     "grunt-browserify": "*",
+    "grunt-contrib-copy": "*",
     "react": "*",
     "react-dom": "*",
     "browserify": "*",

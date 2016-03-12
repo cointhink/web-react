@@ -12,12 +12,21 @@ module.exports = function(grunt) {
             },
             files: { "./build/bundle.js": "./js/*.js"}
          }
-    }
+    },
+    copy: {
+      main: {
+        expand: true,
+        cwd: 'html',
+        src: '**',
+        dest: 'build/',
+      },
+    },
   });
 
-  grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-browserify')
+  grunt.loadNpmTasks('grunt-contrib-copy')
 
   // Default task(s).
-  grunt.registerTask('default', ['browserify']);
+  grunt.registerTask('default', ['browserify', 'copy']);
 
 }
