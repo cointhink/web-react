@@ -11,6 +11,7 @@
     "react-dom": "*",
     "browserify": "*",
     "babelify": "*",
-    "babel-preset-react": "*"
+    "babel-preset-react": "*",
+    "babel-preset-es2015": "*"
   }
 }
