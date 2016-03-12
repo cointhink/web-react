@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'js',
-          src: ['*.js'],
+          src: ['*'],
           dest: 'build',
         }]
       }
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
               ["babelify", {}]
            ]
         },
-        files: { "./build/bundle.js": "./js/*.js"}
+        files: { "./build/app.js": "./js/*"}
       }
     },
     copy: {
@@ -53,6 +53,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jade')
 
   // Default task(s).
-  grunt.registerTask('default', ['babel', 'jade', 'copy']);
+  grunt.registerTask('default', ['browserify', 'jade', 'copy']);
 
 }
