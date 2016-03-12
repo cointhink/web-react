@@ -11,6 +11,7 @@
     "grunt-cli": "*",
     "grunt-browserify": "*",
     "grunt-contrib-copy": "*",
+    "grunt-contrib-jade": "*",
     "react": "*",
     "react-dom": "*",
     "browserify": "*",
