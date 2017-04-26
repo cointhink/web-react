@@ -19,6 +19,8 @@
     "babel-preset-es2015": "*"
   },
   "dependencies": {
-    "react": "^15.5.4"
+    "babel-plugin-relay": "^1.0.1-rc.2",
+    "react": "^15.5.4",
+    "relay-compiler": "^1.0.0-rc.2"
   }
 }
