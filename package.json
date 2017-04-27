@@ -1,14 +1,12 @@
 {
-  "name": "react-typescript-closing-the-loop",
-  "version": "1.0.0",
-  "description": "Closing the loop: why TypeScript and React are a superheroic dynamic duo",
-  "author": "Ryan Atkinson <ryanatkn@gmail.com>",
+  "name": "cointhink-web",
+  "version": "0.1.0",
+  "description": "web ui for cointhink.com",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ryanatkn/react-typescript-closing-the-loop.git"
+    "url": "https://github.com/cointhink/web-react.git"
   },
-  "homepage": "https://github.com/ryanatkn/react-typescript-closing-the-loop",
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "webpack"
@@ -24,9 +22,5 @@
     "awesome-typescript-loader": "^3.1.2",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.4"
-  },
-  "keywords": [
-    "typescript",
-    "react"
-  ]
+  }
 }
