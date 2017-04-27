@@ -12,7 +12,7 @@ export default function main(): void {
     render();
   }
 
-  const root = document.getElementById('root');
+  const root = document.getElementById('page');
 
   function render() {
     ReactDOM.render(
